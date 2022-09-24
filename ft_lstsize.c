@@ -6,7 +6,7 @@
 /*   By: shamzaou <shamzaou@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/02 00:36:45 by shamzaou          #+#    #+#             */
-/*   Updated: 2022/09/02 00:55:09 by shamzaou         ###   ########.fr       */
+/*   Updated: 2022/09/24 16:52:54 by shamzaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	ft_lstsize(t_list *lst)
 {
 	int	count;
 
-    count = 1;
+	count = 1;
 	if (!lst)
 		return (0);
 	if (lst->next == NULL)
