@@ -6,7 +6,7 @@
 /*   By: shamzaou <shamzaou@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/22 10:53:02 by shamzaou          #+#    #+#             */
-/*   Updated: 2022/09/20 14:30:33 by shamzaou         ###   ########.fr       */
+/*   Updated: 2022/09/26 07:21:56 by shamzaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,11 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	unsigned int	i_lit;
 
 	i_big = 0;
-	if (!*little || big == little)
+	i_lit = 0;
+	if (little[i_lit] == '\0')
 		return ((char *)big);
+	if (big && len > ft_strlen(big))
+		len = ft_strlen(big);
 	while (i_big < len)
 	{
 		i_lit = 0;
