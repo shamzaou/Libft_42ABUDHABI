@@ -33,7 +33,7 @@ char	*ft_itoa(int n)
 	char	*str;
 	int		len;
 
-	nbr = n;
+	nbr = (long)n;
 	len = ft_intlen(nbr);
 	str = malloc((len + 1) * sizeof(char));
 	if (str == NULL)
